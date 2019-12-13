@@ -43,7 +43,7 @@ class Authenticate extends Component {
         firebase.auth().onAuthStateChanged(user => {
 
             if (user) {
-                this.props.navigation.navigate("listScreen")
+                this.props.navigation.navigate("listScreen", { user: user })
             }
             else {
                 this.props.navigation.navigate("registration")
