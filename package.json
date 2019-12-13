@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "babel-preset-expo": "^7.0.0",
+    "firebase": "^7.5.2",
     "jest-expo": "^35.0.0"
   },
   "private": true
