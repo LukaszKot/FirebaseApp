@@ -36,10 +36,6 @@ class Authenticate extends Component {
     }
 
     componentDidMount = () => {
-        // firebase.auth()
-        //     .signOut()
-        //     .then(() => alert("logout"))
-        //     .catch((error) => alert(error))
         firebase.auth().onAuthStateChanged(user => {
 
             if (user) {
