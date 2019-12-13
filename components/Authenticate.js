@@ -36,13 +36,17 @@ class Authenticate extends Component {
     }
 
     componentDidMount = () => {
+        // firebase.auth()
+        //     .signOut()
+        //     .then(() => alert("logout"))
+        //     .catch((error) => alert(error))
         firebase.auth().onAuthStateChanged(user => {
 
             if (user) {
                 this.props.navigation.navigate("listScreen")
             }
             else {
-                this.props.navigation.navigate("loginRegister")
+                this.props.navigation.navigate("registration")
             }
 
 
